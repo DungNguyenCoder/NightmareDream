@@ -77,6 +77,7 @@ public class Player : MonoBehaviour
     }
     private void HandleJump()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.jump);
         if (!_groundDetector.WasGroundedLastFrame && _groundDetector.IsGrounded)
             jumpCount = 0;
 
