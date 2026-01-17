@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainMenuUI : MonoBehaviour
+public class MainMenuUI : Panel
 {
     public void OnClickPlayButton()
     {
@@ -13,10 +13,10 @@ public class MainMenuUI : MonoBehaviour
     }
     public void OnClickInstructionButton()
     {
-        PanelManager.Instance.OpenPanel("InstuctionPanel");
+        PanelManager.Instance.OpenPanel(GameConfig.PANEL_INSTRUCTION);
     }
     public void OnClickSettingButton()
     {
-        PanelManager.Instance.OpenPanel("Setting");
+        PanelManager.Instance.OpenPanel(GameConfig.PANEL_SETTING);
     }
 }
