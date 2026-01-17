@@ -1,6 +1,4 @@
-using Unity.VectorGraphics;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PausePanel : Panel

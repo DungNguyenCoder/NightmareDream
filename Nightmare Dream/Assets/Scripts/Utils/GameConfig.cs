@@ -1,6 +1,3 @@
-using System.Collections;
-using Unity.VisualScripting;
-
 public class GameConfig
 {
     public static string PANEL_INSTRUCTION = "InstuctionPanel";
