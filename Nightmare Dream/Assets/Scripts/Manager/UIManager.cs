@@ -4,11 +4,6 @@ using System.Collections.Generic;
 
 public class UIManager : Singleton<UIManager>
 {
-    /// <summary>
-    /// Checks if the user is currently interacting with a UI element.
-    /// This method uses the EventSystem and a RaycastAll to detect UI hits.
-    /// </summary>
-    /// <returns>True if the user is over a UI element, false otherwise.</returns>
     public bool IsPointerOverUI()
     {
         // Get a reference to the current EventSystem

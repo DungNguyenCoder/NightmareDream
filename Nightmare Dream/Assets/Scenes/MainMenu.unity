@@ -283,6 +283,7 @@ RectTransform:
   m_Children:
   - {fileID: 1975199194}
   - {fileID: 577632676}
+  - {fileID: 160780943}
   m_Father: {fileID: 200732434}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -378,6 +379,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109341985}
   m_CullTransparentMesh: 1
+--- !u!1 &160780942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 160780943}
+  - component: {fileID: 160780944}
+  m_Layer: 5
+  m_Name: PanelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &160780943
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160780942}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 76150785}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000061035, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &160780944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160780942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb2b663c4da78d44874fdf2b09830fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelManager
+  dontDestroyOnLoad: 0
 --- !u!1 &185255140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,10 +1180,10 @@ AudioSource:
   m_GameObject: {fileID: 722853130}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -6000873655972924951, guid: dd1aaaa074fdc8a43a8198b3f681d3fb, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: 0fed81bf79e676e41a404b24b7c2cfde, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2728,6 +2778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   dontDestroyOnLoad: 1
+  isWin: 0
 --- !u!4 &1968221204
 Transform:
   m_ObjectHideFlags: 0
@@ -2791,7 +2842,7 @@ GameObject:
   - component: {fileID: 2038340466}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2809,12 +2860,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   dontDestroyOnLoad: 1
-  musicSource: {fileID: 2091755374}
+  audioSource: {fileID: 2091755374}
   SFXSource: {fileID: 722853131}
   audioMixer: {fileID: 24100000, guid: dd1aaaa074fdc8a43a8198b3f681d3fb, type: 2}
   run: {fileID: 8300000, guid: c9cad4f12e6068946b8ef5225c973ade, type: 3}
   jump: {fileID: 8300000, guid: 85d9b19623a9ce843b3bec3411ba3cdc, type: 3}
   dash: {fileID: 8300000, guid: 6471a9d83f77f034685be1a5f6275145, type: 3}
+  dead: {fileID: 8300000, guid: 8e07eb1116827834ca216a304b8d1367, type: 3}
+  menuMusic: {fileID: 8300000, guid: fa1842cd89d0ae0418cdf3ca3b14c910, type: 3}
+  gameMusic: {fileID: 8300000, guid: 0fed81bf79e676e41a404b24b7c2cfde, type: 3}
+  winMusic: {fileID: 8300000, guid: 588153a25d7aa8b4f9167932eb736848, type: 3}
 --- !u!4 &2038340467
 Transform:
   m_ObjectHideFlags: 0
@@ -2858,13 +2913,13 @@ AudioSource:
   m_GameObject: {fileID: 2091755373}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8607946666625270869, guid: dd1aaaa074fdc8a43a8198b3f681d3fb, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: fa1842cd89d0ae0418cdf3ca3b14c910, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

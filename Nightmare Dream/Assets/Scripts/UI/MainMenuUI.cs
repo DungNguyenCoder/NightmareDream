@@ -9,7 +9,7 @@ public class MainMenuUI : Panel
 {
     public void OnClickPlayButton()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("StoryScene");
     }
     public void OnClickInstructionButton()
     {

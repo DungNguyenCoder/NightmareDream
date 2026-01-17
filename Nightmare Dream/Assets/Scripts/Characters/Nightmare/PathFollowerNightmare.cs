@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class PathFollowerNightmare : MonoBehaviour
 {
-    public float delay = 3f;
-    private int index = 0;
+    private float delay = 3f;
+    public bool isActive = false;
+    public int index = 0;
 
-    void Update()
+    private void Update()
     {
+        if (!isActive) return;     
         var snapshots = PlayerRecorder.Instance.snapshots;
 
         if (snapshots.Count == 0) return;
@@ -19,15 +21,6 @@ public class PathFollowerNightmare : MonoBehaviour
             transform.rotation = snapshots[index].rotation;
             transform.localScale = snapshots[index].localScale;
             index++;
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            Debug.Log("PLAYER DEAD");
-            // gọi death logic ở đây
         }
     }
 }

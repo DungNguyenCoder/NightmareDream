@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : Singleton<AudioManager>
 {
-    [SerializeField] private AudioSource musicSource;
-    [SerializeField] private AudioSource SFXSource;
-    [SerializeField] private AudioMixer audioMixer;
+    public AudioSource audioSource;
+    public AudioSource SFXSource;
+    public AudioMixer audioMixer;
     public AudioClip run;
     public AudioClip jump;
     public AudioClip dash;
+    public AudioClip dead;
+    public AudioClip menuMusic;
+    public AudioClip gameMusic;
+    public AudioClip winMusic;
     public override void Awake()
     {
         base.Awake();
@@ -33,10 +37,50 @@ public class AudioManager : Singleton<AudioManager>
     {
         SFXSource.PlayOneShot(audioClip);
     }
+    public void PlayMenuMusic()
+    {
+        if (audioSource.clip == menuMusic) return;
+
+        audioSource.clip = menuMusic;
+        audioSource.loop = true;
+        audioSource.Play();
+    }
+
+    public void PlayGameMusic()
+    {
+        if (audioSource.clip == gameMusic) return;
+
+        audioSource.clip = gameMusic;
+        audioSource.loop = true;
+        audioSource.Play();
+    }
+
+    public void PlayWinMusic()
+    {
+        if (audioSource.clip == winMusic) return;
+
+        audioSource.clip = winMusic;
+        audioSource.loop = true;
+        audioSource.Play();
+    }
+    public void PauseMusic()
+    {
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Pause();
+        }
+    }
+    public void ContinueMusic()
+    {
+        if (audioSource != null)
+        {
+            audioSource.UnPause();
+        }
+    }
     public void PlayMusicFromStart()
     {
-        musicSource.Stop();
-        musicSource.time = 0f;
-        musicSource.Play();
+        audioSource.Stop();
+        audioSource.time = 0f;
+        audioSource.Play();
     }
 }

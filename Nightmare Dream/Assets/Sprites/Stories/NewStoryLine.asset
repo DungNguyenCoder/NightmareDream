@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8324fb625cd7c4eb364abe04855c67, type: 3}
+  m_Name: NewStoryLine
+  m_EditorClassIdentifier: Assembly-CSharp::Story
+  storyLines:
+  - You are a weeb who loves pretending to be a ninja.
+  - Every night, you dream that you can run and leap freely anywhere.
+  - But after you caught COVID-19, you developed a fear of bats.
+  - "From that moment on, whenever you fall asleep, bats always appear\u2026 and
+    chase you."
+  - You must run from them to reach a place of peace.
+  - "However, be careful of the portals you step into \u2014"
+  - they may lead you somewhere you can never escape from.
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: d1326f8e5b6c5214ba45eac3c3fac7d2, type: 3}
+  voicePitch: 1
+  autoProcessLines: 01010101010101
+  autoProcessDelay: 1.5
