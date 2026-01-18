@@ -5,16 +5,14 @@ public class PausePanel : Panel
 {
     public void OnClickContinue()
     {
-        Debug.Log("Continue");
         PanelManager.Instance.ClosePanel(this.name);
         AudioManager.Instance.ContinueMusic();
         Time.timeScale = 1.0f;
     }
     public void OnClickQuit()
     {
-        Debug.Log("Quit");
         Time.timeScale = 1.0f;
         AudioManager.Instance.PlayMenuMusic();
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(GameConfig.SCENE_MAIN_MENU);
     }
 }

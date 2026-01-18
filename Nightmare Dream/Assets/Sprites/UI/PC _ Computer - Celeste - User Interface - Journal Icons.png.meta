@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: c4587c16053df6240bfdabbcf2d0efd5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8820199125627585322
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_0
+  - first:
+      213: 6848695346904482851
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_1
+  - first:
+      213: 5566281981431794859
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_2
+  - first:
+      213: -5949713217403342677
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_3
+  - first:
+      213: 834337858820174773
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_4
+  - first:
+      213: 374802594291300987
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_5
+  - first:
+      213: -3816029214655708348
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_6
+  - first:
+      213: 8648109969851219272
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_7
+  - first:
+      213: -6308016488680634989
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_8
+  - first:
+      213: -4736168206928378499
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_9
+  - first:
+      213: -1200000493788339081
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_10
+  - first:
+      213: 3193520912677693523
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_11
+  - first:
+      213: 4317993495117812688
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_12
+  - first:
+      213: -5738945145539634201
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_13
+  - first:
+      213: 461663115422967321
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_14
+  - first:
+      213: -457541100876538058
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_15
+  - first:
+      213: 5788905426360144184
+    second: PC _ Computer - Celeste - User Interface - Journal Icons_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC _ Computer - Celeste - User Interface - Journal Icons_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 82
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75098deb10c54eb0800000000000000
+      internalID: -4736168206928378499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a10b0c7a378d03a4aa3f36de6c0a1777
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PC _ Computer - Celeste - User Interface - Journal Icons_0: 8820199125627585322
+      PC _ Computer - Celeste - User Interface - Journal Icons_1: 6848695346904482851
+      PC _ Computer - Celeste - User Interface - Journal Icons_10: -1200000493788339081
+      PC _ Computer - Celeste - User Interface - Journal Icons_11: 3193520912677693523
+      PC _ Computer - Celeste - User Interface - Journal Icons_12: 4317993495117812688
+      PC _ Computer - Celeste - User Interface - Journal Icons_13: -5738945145539634201
+      PC _ Computer - Celeste - User Interface - Journal Icons_14: 461663115422967321
+      PC _ Computer - Celeste - User Interface - Journal Icons_15: -457541100876538058
+      PC _ Computer - Celeste - User Interface - Journal Icons_16: 5788905426360144184
+      PC _ Computer - Celeste - User Interface - Journal Icons_2: 5566281981431794859
+      PC _ Computer - Celeste - User Interface - Journal Icons_3: -5949713217403342677
+      PC _ Computer - Celeste - User Interface - Journal Icons_4: 834337858820174773
+      PC _ Computer - Celeste - User Interface - Journal Icons_5: 374802594291300987
+      PC _ Computer - Celeste - User Interface - Journal Icons_6: -3816029214655708348
+      PC _ Computer - Celeste - User Interface - Journal Icons_7: 8648109969851219272
+      PC _ Computer - Celeste - User Interface - Journal Icons_8: -6308016488680634989
+      PC _ Computer - Celeste - User Interface - Journal Icons_9: -4736168206928378499
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

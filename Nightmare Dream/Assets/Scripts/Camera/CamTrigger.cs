@@ -12,7 +12,7 @@ public class CamTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == GameConfig.TAG_PLAYER)
         {
             _cameraController._minPos += _newCamPos;
             _cameraController._maxPos += _newCamPos;

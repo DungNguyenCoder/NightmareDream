@@ -3,13 +3,18 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private Player _player;
-    [SerializeField] private PathFollowerNightmare _nightmare;
+    [SerializeField] private SpawnNightmare _nightmare;
     [SerializeField] private float _smoothSpeed;
     private Vector3 _targetPos, _newPos;
-    public Vector3 _minPos, _maxPos;
-
-    private Vector3 _deadRoomPos = new Vector3(60, 0, -10);
-    private Vector3 _winRoomPos = new Vector3(60, 12, -10);
+    public Vector3 _minPos { get; set; }
+    public Vector3 _maxPos { get; set; }
+    private bool hasWon = false;
+    private void Awake()
+    {
+        _minPos = new Vector3(0, 0, -10);
+        _maxPos = new Vector3(0, 0, -10);
+        transform.position = new Vector3(0, 0, -10);
+    }
     private void LateUpdate()
     {
         if (!_player.isDead)
@@ -23,9 +28,13 @@ public class CameraController : MonoBehaviour
 
             _newPos = Vector3.Lerp(transform.position, camBoundaryPos, _smoothSpeed);
             transform.position = _newPos;
-            if (transform.position == _winRoomPos || transform.position == _deadRoomPos)
+            if (Vector3.Distance(transform.position, GameConfig.POSITION_WIN_ROOM) < 0.01f || Vector3.Distance(transform.position, GameConfig.POSITION_DEAD_ROOM) < 0.01f)
             {
-                _nightmare.isActive = false;
+                _nightmare.IsActiveXNightmare(false);
+            }
+            if(!hasWon && Vector3.Distance(transform.position, GameConfig.POSITION_WIN_ROOM) < 0.01f)
+            {
+                hasWon = true;
                 PanelManager.Instance.OpenPanel(GameConfig.PANEL_WIN);
                 AudioManager.Instance.PlayWinMusic();
             }

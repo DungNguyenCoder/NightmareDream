@@ -5,12 +5,12 @@ public class WinPanel : Panel
 {
     public void OnClickReplay()
     {
-        SceneManager.LoadScene("GameScene");
-        AudioManager.Instance.PlayMusicFromStart();
+        SceneManager.LoadScene(GameConfig.SCENE_PLAY);
+        AudioManager.Instance.PlayGameMusic();
     }
     public void OnClickHome()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(GameConfig.SCENE_MAIN_MENU);
         AudioManager.Instance.PlayMenuMusic();
     }
 }

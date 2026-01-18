@@ -4,7 +4,11 @@ public class MainMenuUI : Panel
 {
     public void OnClickPlayButton()
     {
-        SceneManager.LoadScene("StoryScene");
+        SceneManager.LoadScene(GameConfig.SCENE_STORY);
+    }
+    public void OnClickModeButton()
+    {
+        PanelManager.Instance.OpenPanel(GameConfig.PANEL_MODE);
     }
     public void OnClickInstructionButton()
     {

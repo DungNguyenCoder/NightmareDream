@@ -12,7 +12,7 @@ public class PlayerRecorder : Singleton<PlayerRecorder>
         if (timer >= recordInterval)
         {
             timer = 0f;
-            snapshots.Add(new PlayerSnapshot(transform.position, transform.rotation, transform.localScale, Time.time));
+            snapshots.Add(new PlayerSnapshot(transform.position, transform.localScale, Time.time));
         }
     }
 }

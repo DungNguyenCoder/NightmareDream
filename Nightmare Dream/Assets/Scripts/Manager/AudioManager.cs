@@ -12,6 +12,7 @@ public class AudioManager : Singleton<AudioManager>
     public AudioClip menuMusic;
     public AudioClip gameMusic;
     public AudioClip winMusic;
+    public AudioClip voice;
     public override void Awake()
     {
         base.Awake();
